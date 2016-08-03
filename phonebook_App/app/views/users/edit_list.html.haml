@@ -1,0 +1,6 @@
+%h1 List of users
+- User.all.order(:name).each do |user|
+  = link_to "#{user.name}", "/users/#{user.id}"
+  = user.number
+  = link_to "edit user", "/users/#{user.id}/edit"
+  %br/

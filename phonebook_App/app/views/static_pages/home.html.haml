@@ -1,0 +1,9 @@
+%h1 Home
+%p
+  Welcome to the PhonebookApp!
+  Chose one of the following options:
+%li= link_to "entries", entries_path
+%li= link_to "search", search_path
+%li= link_to "help", help_path
+%p
+  Click to switch to #{link_to "manager mode",   select_mode_path}
